@@ -1,4 +1,6 @@
 from subprocess import call
+
+
 class l00p3r:
     """
     looper that loops
@@ -30,7 +32,7 @@ class f0rm4t:
     return usr:pwd couple Hydra compatible
     """
 
-    def __init__(self, vict,port, usr, pwd):
+    def __init__(self, vict, port, usr, pwd):
         self.vict = vict
         self.usr = usr
         self.pwd = pwd
@@ -41,7 +43,8 @@ class f0rm4t:
         return formatted
         :return: str
         """
-        f0rm =  "-v {} -P {} -u {} -p {}".format(self.vict.rstrip(), self.port.rstrip(), self.usr.rstrip(), self.pwd.rstrip())
+        f0rm = "-v {} -P {} -u {} -p {}".format(self.vict.rstrip(), self.port.rstrip(), self.usr.rstrip(),
+                                                self.pwd.rstrip())
         return f0rm
 
 
@@ -49,11 +52,12 @@ class shellproc:
     def __init__(self):
         pass
 
-    def exec(self,cmd):
+    def exec(self, cmd):
         return call(cmd)
 
+
 class cnx:
-    def __init__(self,ip,port,usr,password,protocol):
+    def __init__(self, ip, port, usr, password, protocol):
         self.ip = ip
         self.port = port
         self.usr = usr
@@ -61,11 +65,11 @@ class cnx:
         self.protocol = protocol
 
     def c0nnec7(self):
-        if self.protocol == "ftp":
-            pass
-
-
-
-
-
-
+        if self.protocol == "ssh":
+            shellproc().exec(
+                "sshpass -p {} ssh -o StrictHostKeyChecking=no {}@{} -p {}".format(self.password, self.usr, self.ip,
+                                                                                   self.port))
+        elif self.protocol == "telnet":
+            shellproc().exec(
+                "sshpass -p {} ssh -o StrictHostKeyChecking=no {}@{} -p {}".format(self.password, self.usr, self.ip,
+                                                                                   self.port))
