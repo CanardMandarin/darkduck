@@ -1,0 +1,3 @@
+21:ftp
+22:ssh
+23:telnet
