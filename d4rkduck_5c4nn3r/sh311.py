@@ -12,7 +12,6 @@ class sh311:
         Returns actual public address
         :return:
         """
-        # TODO move to configuration file
         ip, port = "8.8.8.8", 80
         execution = {}
         try:
@@ -51,4 +50,4 @@ class sh311:
             __exec['retcode'] = 1
             __exec['uniresp'] = str("false")
 
-        return __exec
+        return True if __exec['retcode'] == 0 else False

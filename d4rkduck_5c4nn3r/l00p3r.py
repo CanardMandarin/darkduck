@@ -1,4 +1,4 @@
-from subprocess import call
+from d4rkduck_5c4nn3r.sh311 import sh311
 
 
 class l00p3r:
@@ -48,14 +48,6 @@ class f0rm4t:
         return f0rm
 
 
-class shellproc:
-    def __init__(self):
-        pass
-
-    def exec(self, cmd):
-        return call(cmd)
-
-
 class cnx:
     def __init__(self, ip, port, usr, password, protocol):
         self.ip = ip
@@ -65,11 +57,13 @@ class cnx:
         self.protocol = protocol
 
     def c0nnec7(self):
+        res = ""
         if self.protocol == "ssh":
-            shellproc().exec(
+            return sh311().execom(
                 "sshpass -p {} ssh -o StrictHostKeyChecking=no {}@{} -p {}".format(self.password, self.usr, self.ip,
                                                                                    self.port))
+
         elif self.protocol == "telnet":
-            shellproc().exec(
+            return sh311().execom(
                 "sshpass -p {} ssh -o StrictHostKeyChecking=no {}@{} -p {}".format(self.password, self.usr, self.ip,
                                                                                    self.port))
