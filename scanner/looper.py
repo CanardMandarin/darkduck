@@ -1,7 +1,7 @@
-from d4rkduck_5c4nn3r.sh311 import sh311
+from scanner.shell import shell
 
 
-class l00p3r:
+class looper:
     """
     looper that loops
     """
@@ -10,7 +10,7 @@ class l00p3r:
         self.list = list
         self.split = split
 
-    def l00p(self):
+    def loop(self):
         """
         loop over txt file as usr:pwd source
         :return:
@@ -27,25 +27,25 @@ class l00p3r:
         return _4rr4y
 
 
-class f0rm4t:
+class format:
     """
     return usr:pwd couple Hydra compatible
     """
 
-    def __init__(self, vict, port, usr, pwd):
-        self.vict = vict
+    def __init__(self, victim, port, usr, pwd):
+        self.victim = victim
         self.usr = usr
         self.pwd = pwd
         self.port = port
 
-    def f0rm4t(self):
+    def format(self):
         """
         return formatted
         :return: str
         """
-        f0rm = "-v {} -P {} -u {} -p {}".format(self.vict.rstrip(), self.port.rstrip(), self.usr.rstrip(),
+        form = "-v {} -P {} -u {} -p {}".format(self.victim.rstrip(), self.port.rstrip(), self.usr.rstrip(),
                                                 self.pwd.rstrip())
-        return f0rm
+        return form
 
 
 class cnx:
@@ -56,14 +56,10 @@ class cnx:
         self.password = password
         self.protocol = protocol
 
-    def c0nnec7(self):
-        res = ""
+    def connect(self):
         if self.protocol == "ssh":
-            return sh311().execom(
-                "sshpass -p {} ssh -o StrictHostKeyChecking=no {}@{} -p {}".format(self.password, self.usr, self.ip,
-                                                                                   self.port))
+            s = shell().execom(
+                "sshpass -p {} ssh -q -o ConnectTimeout=3 -o StrictHostKeyChecking=no {}@{} -p {}".format(
+                    self.password.rstrip(), self.usr.rstrip(), self.ip.rstrip(), self.port.rstrip()))
+            print(s)
 
-        elif self.protocol == "telnet":
-            return sh311().execom(
-                "sshpass -p {} ssh -o StrictHostKeyChecking=no {}@{} -p {}".format(self.password, self.usr, self.ip,
-                                                                                   self.port))

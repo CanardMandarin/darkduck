@@ -2,12 +2,12 @@ import socket
 from subprocess import Popen, PIPE
 
 
-class sh311:
+class shell:
     def __init__(self):
         pass
 
     @staticmethod
-    def get_ip_address():    # type: () -> dict
+    def get_ip_address():
         """
         Returns actual public address
         :return:
@@ -35,9 +35,6 @@ class sh311:
 
     @staticmethod
     def execom(command: str):
-        """
-        :return:
-        """
         __exec = {}
         try:
             __exc = Popen(command.split(" "), stdout=PIPE)
@@ -50,4 +47,4 @@ class sh311:
             __exec['retcode'] = 1
             __exec['uniresp'] = str("false")
 
-        return True if __exec['retcode'] == 0 else False
+        return __exec
