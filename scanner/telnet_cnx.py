@@ -1,5 +1,4 @@
 import telnetlib
-import time
 
 thost="10.3.107.82"
 tuser="support"
@@ -13,7 +12,7 @@ tn.read_until("assword: ")
 tn.write(tpass + "\n")
 n, match, previous_text = tn.expect([r'incorrect', r'\$'], 4)
 if n == 0:
-        print "FAILED"
+        print("FAILED")
 else:
-        print "SUCCESS"
+        print("SUCCESS")
 
