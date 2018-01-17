@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#include "includes.h"
+#include "common.h"
 #include "rand.h"
 
 static uint32_t x, y, z, w;
