@@ -1,9 +1,6 @@
-from scanner.shell import shell
-
-
-class looper:
+class Looper:
     """
-    looper that loops
+    Looper that loops
     """
 
     def __init__(self, list, split=False):
@@ -26,7 +23,6 @@ class looper:
 
         return _4rr4y
 
-
 class format:
     """
     return usr:pwd couple Hydra compatible
@@ -44,22 +40,6 @@ class format:
         :return: str
         """
         form = "-v {} -P {} -u {} -p {}".format(self.victim.rstrip(), self.port.rstrip(), self.usr.rstrip(),
-                                                self.pwd.rstrip())
+                                                    self.pwd.rstrip())
         return form
-
-
-class cnx:
-    def __init__(self, ip, port, usr, password, protocol):
-        self.ip = ip
-        self.port = port
-        self.usr = usr
-        self.password = password
-        self.protocol = protocol
-
-    def connect(self):
-        if self.protocol == "ssh":
-            s = shell().execom(
-                "sshpass -p {} ssh -q -o ConnectTimeout=3 -o StrictHostKeyChecking=no {}@{} -p {}".format(
-                    self.password.rstrip(), self.usr.rstrip(), self.ip.rstrip(), self.port.rstrip()))
-            print(s)
 
