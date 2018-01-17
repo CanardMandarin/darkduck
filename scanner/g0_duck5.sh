@@ -13,6 +13,9 @@ echo -ne "              \ <_. ) \n "
 echo -ne "-------------------------------------------------  \n "
 
 
+rm ips*
+python3 ./.g3t_t4rg3t.py
 while IFS='' read -r line || [[ -n "$line" ]]; do
     python3 ./.sc4nn3r.py $line &
-done < "$1"
+done < ips_local
+exit

@@ -1,6 +1,6 @@
+#!/usr/bin/python3
 import json
 import requests
-
 ##### TARGETS #####
 API_URL = "https://censys.io/api/v1"
 UID = "9541ad2f-b698-43b3-a1fe-3c5efa49bf82"
@@ -13,3 +13,5 @@ with open('ips', 'a') as targets_file:
 with open('ips_local', 'a') as targetslocal_file:
     targetslocal_file.write("10.3.107.98\n10.3.107.96")
 ##### TARGETS #####
+
+
