@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5fde6c66-f175-4502-a6be-ebb4edb58419" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/scanner/Class/Tools.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scanner/Class/__init__.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/scanner/bot.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scanner/bot2.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scanner/ips.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scanner/looper.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scanner/passwords.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scanner/protocols.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scanner/req.sh" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scanner/scan.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scanner/shell.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scanner/telnet_cnx.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/scanner/Class/Shell.py" afterPath="$PROJECT_DIR$/scanner/Class/Shell.py" />
+      <change beforePath="$PROJECT_DIR$/scanner/Class/Tools.py" afterPath="$PROJECT_DIR$/scanner/Class/Tools.py" />
+      <change beforePath="$PROJECT_DIR$/scanner/sc4nn3r.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,23 +27,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sc4nn3r.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scanner/sc4nn3r.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-              <folding>
-                <element signature="e#19#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Colors.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scanner/Class/Colors.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".sc4nn3r.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scanner/.sc4nn3r.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="661">
+              <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="g0_duck5.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scanner/g0_duck5.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -71,8 +70,8 @@
       <file leaf-file-name="Tools.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scanner/Class/Tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state relative-caret-position="378">
+              <caret line="30" column="69" lean-forward="true" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -90,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Shell.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Shell.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scanner/Class/Shell.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="735">
+              <caret line="47" column="44" lean-forward="true" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -133,6 +132,8 @@
       <find>testTelnet</find>
       <find>testSsh</find>
       <find>enableStdoutLogging</find>
+      <find>prin</find>
+      <find>#</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -153,6 +154,7 @@
       <replace>test_telnet</replace>
       <replace>test_ssh</replace>
       <replace>enable_stdout_logging</replace>
+      <replace>echo -ne &quot;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -192,7 +194,11 @@
         <option value="$PROJECT_DIR$/scanner/classes/tools.py" />
         <option value="$PROJECT_DIR$/scanner/Class/Looper.py" />
         <option value="$PROJECT_DIR$/scanner/sc4nn3r.py" />
+        <option value="$PROJECT_DIR$/scanner/Class/sc4nn3r.py" />
+        <option value="$PROJECT_DIR$/scanner/g0_duck5.sh" />
+        <option value="$PROJECT_DIR$/scanner/.sc4nn3r.py" />
         <option value="$PROJECT_DIR$/scanner/Class/Tools.py" />
+        <option value="$PROJECT_DIR$/scanner/Class/Shell.py" />
       </list>
     </option>
   </component>
@@ -261,6 +267,7 @@
       <recent name="$PROJECT_DIR$/scanner" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scanner" />
       <recent name="$PROJECT_DIR$/scanner/Class" />
       <recent name="C:\Users\antares\PycharmProjects\d4rkduck\d4rkduck_5c4nn3r" />
     </key>
@@ -766,20 +773,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scanner/Class/Shell.py">
+    <entry file="file://$PROJECT_DIR$/scanner/sc4nn3r.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scanner/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="476">
+          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -792,6 +789,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scanner/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scanner/Class/Colors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -800,22 +805,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scanner/.sc4nn3r.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanner/g0_duck5.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scanner/Class/Tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="378">
+          <caret line="30" column="69" lean-forward="true" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scanner/sc4nn3r.py">
+    <entry file="file://$PROJECT_DIR$/scanner/Class/Shell.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        <state relative-caret-position="735">
+          <caret line="47" column="44" lean-forward="true" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
           <folding>
-            <element signature="e#19#33#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>

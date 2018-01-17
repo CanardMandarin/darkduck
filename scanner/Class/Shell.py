@@ -40,7 +40,7 @@ class shell:
             __exc = Popen(command.split(" "), stdout=PIPE)
             __exec['subprocess'] = str("".join(map(str, __exc.communicate()[0].decode()))),
             __exec['retcode'] = __exc.returncode
-            __exec['uniresp'] = str("true")
+            __exec['exec'] = str("true")
         except Exception as e:
             __exec['subprocess'] = str("something went wrong with the executed command")
             __exec['exception'] = str("{}".format(str(e.args[1])))
