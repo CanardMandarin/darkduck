@@ -23,4 +23,23 @@ class Looper:
 
         return _4rr4y
 
+class format:
+    """
+    return usr:pwd couple Hydra compatible
+    """
+
+    def __init__(self, victim, port, usr, pwd):
+        self.victim = victim
+        self.usr = usr
+        self.pwd = pwd
+        self.port = port
+
+    def format(self):
+        """
+        return formatted
+        :return: str
+        """
+        form = "-v {} -P {} -u {} -p {}".format(self.victim.rstrip(), self.port.rstrip(), self.usr.rstrip(),
+                                                    self.pwd.rstrip())
+        return form
 
