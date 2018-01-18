@@ -14,8 +14,8 @@ echo -ne "-------------------------------------------------  \n "
 
 
 rm ips*
-python3 ./.g3t_t4rg3t.py
+python3 ./get_target.py
 while IFS='' read -r line || [[ -n "$line" ]]; do
-    python3 ./.sc4nn3r.py $line &
+    python3 ./scanner.py $line &
 done < ips_local
 exit
