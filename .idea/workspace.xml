@@ -4,20 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fde6c66-f175-4502-a6be-ebb4edb58419" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/d4rkduck_5c4nnEr_v1.iml" afterPath="$PROJECT_DIR$/.idea/d4rkduck_5c4nnEr_v1.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/SCANNER/.g3t_t4rg3t.py" afterPath="$PROJECT_DIR$/SCANNER/get_target.py" />
-      <change beforePath="$PROJECT_DIR$/SCANNER/.sc4nn3r.py" afterPath="$PROJECT_DIR$/SCANNER/scanner.py" />
-      <change beforePath="$PROJECT_DIR$/SCANNER/Class/Looper.py" afterPath="$PROJECT_DIR$/SCANNER/Class/Looper.py" />
-      <change beforePath="$PROJECT_DIR$/SCANNER/g0_duck5.sh" afterPath="$PROJECT_DIR$/SCANNER/go_ducks.sh" />
-      <change beforePath="$PROJECT_DIR$/SCANNER/ips" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SCANNER/ips_local" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SCANNER/resources/ips.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/SCANNER/resources/passwords0.txt" afterPath="$PROJECT_DIR$/SCANNER/resources/passwords.txt" />
-    </list>
+    <list default="true" id="5fde6c66-f175-4502-a6be-ebb4edb58419" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Looper.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Looper.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SCANNER/Class/Looper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="591">
+              <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -65,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scanner.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scanner.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SCANNER/scanner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="-455">
               <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
                 <element signature="e#19#33#0" expanded="true" />
@@ -120,7 +107,7 @@
       <file leaf-file-name="Tools.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SCANNER/Class/Tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="116">
               <caret line="30" column="69" lean-forward="false" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
@@ -247,8 +234,8 @@
         <option value="$PROJECT_DIR$/scanner/.sc4nn3r.py" />
         <option value="$PROJECT_DIR$/SCANNER/g0_duck5.sh" />
         <option value="$PROJECT_DIR$/SCANNER/resources/passwords.txt" />
-        <option value="$PROJECT_DIR$/SCANNER/Class/Looper.py" />
         <option value="$PROJECT_DIR$/SCANNER/scanner.py" />
+        <option value="$PROJECT_DIR$/SCANNER/Class/Looper.py" />
       </list>
     </option>
   </component>
@@ -624,11 +611,18 @@
       <option name="presentableId" value="Default" />
       <updated>1516010066885</updated>
     </task>
+    <task id="LOCAL-00001" summary="antares667367 -- reintegration format">
+      <created>1516282955177</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1516282955177</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1102" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.50416666" order="8" side_tool="true" content_ui="tabs" />
@@ -636,7 +630,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -660,6 +654,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="antares667367 -- reintegration format" />
+    <option name="LAST_COMMIT_MESSAGE" value="antares667367 -- reintegration format" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -890,16 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SCANNER/Class/Tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="30" column="69" lean-forward="false" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SCANNER/resources/passwords.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -924,14 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SCANNER/Class/Looper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SCANNER/get_target.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -942,11 +922,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SCANNER/scanner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
+        <state relative-caret-position="-455">
           <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
             <element signature="e#19#33#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SCANNER/Class/Tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="30" column="69" lean-forward="false" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SCANNER/Class/Looper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
