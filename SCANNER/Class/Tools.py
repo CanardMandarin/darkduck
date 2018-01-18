@@ -47,7 +47,6 @@ class Utils:
         r = shell().execom(cmd)
         if r["retcode"] == 255 or r["retcode"] == 4:
             self.dbg("{}".format(r))
-            #exit(0)
             return False
         elif r["retcode"] == 0:
             self.dbg(format(ip, protocol[0], u_p[0], u_p[1]).format())
